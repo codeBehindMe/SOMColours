@@ -2,3 +2,9 @@ github.com/codeBehindMe/gosom v0.0.0-20200812025838-f7afc35200b7 h1:3V6AVITdFlIO
 github.com/codeBehindMe/gosom v0.0.0-20200812025838-f7afc35200b7/go.mod h1:N4+EPNNohsVnxU6ysgMG+TtaSL0Rzf08y+1XGLxov/Q=
 github.com/codeBehindMe/gosom v0.1.1 h1:XrQOtAoOaTU7AhDPxBBscDLSDh5zHGGvCSQDURR8SiI=
 github.com/codeBehindMe/gosom v0.1.1/go.mod h1:N4+EPNNohsVnxU6ysgMG+TtaSL0Rzf08y+1XGLxov/Q=
+github.com/codeBehindMe/gosom v0.2.1 h1:3toMnKMCxV8EkSR81QgED13hohSvu76wHT2qcfSzpSA=
+github.com/codeBehindMe/gosom v0.2.1/go.mod h1:N4+EPNNohsVnxU6ysgMG+TtaSL0Rzf08y+1XGLxov/Q=
+github.com/codeBehindMe/gosom v0.2.2 h1:kdeMMOXa/TC8XLsc+TSA+oB9dlloHqATjZmt81A2wNE=
+github.com/codeBehindMe/gosom v0.2.2/go.mod h1:N4+EPNNohsVnxU6ysgMG+TtaSL0Rzf08y+1XGLxov/Q=
+github.com/codeBehindMe/gosom v0.3.0 h1:E0rz9ZfNj6X9TAkqfMcLzhSH1mw7WSnDzNXPuCWJjcs=
+github.com/codeBehindMe/gosom v0.3.0/go.mod h1:N4+EPNNohsVnxU6ysgMG+TtaSL0Rzf08y+1XGLxov/Q=

@@ -24,37 +24,51 @@
 package main
 
 import (
-	"github.com/codeBehindMe/gosom/algo"
+	"github.com/codeBehindMe/gosom"
 	"github.com/codeBehindMe/gosom/feed"
 	"github.com/codeBehindMe/gosom/mapx"
 )
 
-func main(){
-	somTenColourHundredIterations := algo.NewSOM(feed.CSVFileFeeder{
+func main() {
+
+	somTenColourHundredIterations := gosom.NewSOM64(feed.CSVFileFeeder{
 		Filename:    "ten_colours.csv",
 		FeatureSize: 3,
-	},10,10,3,mapx.PseudoZerosOnesInitialiser,100,0.1)
+	}, 10, 10, 100, 0.1, mapx.RandomNormalInitialiser)
 	somTenColourHundredIterations.Train()
-	somTenColourHundredIterations.DumpWeightsToFile("somTenColourHundredIterations.json")
+	err := somTenColourHundredIterations.DumpMapToFile("somTenColourHundredIterations.json")
+	if err != nil {
+		panic(err)
+	}
 
-	somTenColourTwoHundredIterations := algo.NewSOM(feed.CSVFileFeeder{
+	somTenColourTwoHundredIterations := gosom.NewSOM64(feed.CSVFileFeeder{
 		Filename:    "ten_colours.csv",
 		FeatureSize: 3,
-	},10,10,3,mapx.PseudoZerosOnesInitialiser,200,0.1)
+	}, 10, 10, 200, 0.1, mapx.RandomNormalInitialiser)
 	somTenColourTwoHundredIterations.Train()
-	somTenColourTwoHundredIterations.DumpWeightsToFile("somTenColourTwoHundredIterations.json")
+	err = somTenColourTwoHundredIterations.DumpMapToFile("somTenColourTwoHundredIterations.json")
+	if err != nil {
+		panic(err)
+	}
 
-	somTenColourFiveHundredIterations := algo.NewSOM(feed.CSVFileFeeder{
+	somTenColourFiveHundredIterations := gosom.NewSOM64(feed.CSVFileFeeder{
 		Filename:    "ten_colours.csv",
 		FeatureSize: 3,
-	},10,10,3,mapx.PseudoZerosOnesInitialiser,500,0.1)
+	}, 10, 10, 500, 0.1, mapx.RandomNormalInitialiser)
 	somTenColourFiveHundredIterations.Train()
-	somTenColourFiveHundredIterations.DumpWeightsToFile("somTenColourFiveHundredIterations.json")
+	err = somTenColourFiveHundredIterations.DumpMapToFile("somTenColourFiveHundredIterations.json")
+	if err != nil {
+		panic(err)
+	}
 
-	somTenColourThousandIterations := algo.NewSOM(feed.CSVFileFeeder{
+	somTenColourThousandIterations := gosom.NewSOM64(feed.CSVFileFeeder{
 		Filename:    "ten_colours.csv",
 		FeatureSize: 3,
-	},100,100,3,mapx.PseudoZerosOnesInitialiser,1000,0.1)
+	}, 100, 100, 1000, 0.1, mapx.RandomNormalInitialiser)
 	somTenColourThousandIterations.Train()
-	somTenColourThousandIterations.DumpWeightsToFile("somTenColourThousandIterations.json")
+	err = somTenColourThousandIterations.DumpMapToFile("somTenColourThousandIterations.json")
+	if err != nil {
+		panic(err)
+	}
+
 }
